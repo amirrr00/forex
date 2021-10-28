@@ -23,16 +23,56 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($shares as $share)
-                            <tr>
-                                <th scope="row">{{$loop->iteration}}</th>
-                                <td>{{$share['name']}}</td>
-                                <td>{{$share['signal']}}</td>
-                                <td>{{$share['price']}}</td>
-                                <td>{{$share['date']}}</td>
-                                <td><a href="{{route('chart_show',$share['nick_name'])}}">show</a></td>
-                            </tr>
-                        @endforeach
+                        {{--@foreach($shares as $share)--}}
+                            {{--<tr>--}}
+                                {{--<th scope="row">{{$loop->iteration}}</th>--}}
+                                {{--<td>{{$share['name']}}</td>--}}
+                                {{--<td>{{$share['signal']}}</td>--}}
+                                {{--<td>{{$share['price']}}</td>--}}
+                                {{--<td>{{$share['date']}}</td>--}}
+                                {{--<td><a href="{{route('chart_show',$share['nick_name'])}}">show</a></td>--}}
+                            {{--</tr>--}}
+                        {{--@endforeach--}}
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Euro</td>
+                            <td>yes</td>
+                            <td>3200</td>
+                            <td>2021/11/10</td>
+                            <td><a href="{{route('chart_show','FX:EURUSD')}}">show</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Pound</td>
+                            <td>no</td>
+                            <td>500</td>
+                            <td>2021/11/10</td>
+                            <td><a href="{{route('chart_show','FX:GBPUSD')}}">show</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Dollar</td>
+                            <td>no</td>
+                            <td>500</td>
+                            <td>2021/11/10</td>
+                            <td><a href="{{route('chart_show','FX:USDJPY')}}">show</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Eng pound</td>
+                            <td>no</td>
+                            <td>100</td>
+                            <td>2021/11/10</td>
+                            <td><a href="{{route('chart_show','OANDA:GBPUSD')}}">show</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Canada dollar</td>
+                            <td>yes</td>
+                            <td>800</td>
+                            <td>2021/11/10</td>
+                            <td><a href="{{route('chart_show','OANDA:USDCAD')}}">show</a></td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>

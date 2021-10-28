@@ -23,16 +23,56 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($cryptoes as $crypto)
-                            <tr>
-                                <th scope="row">{{$loop->iteration}}</th>
-                                <td>{{$crypto['name']}}</td>
-                                <td>{{$crypto['signal']}}</td>
-                                <td>{{$crypto['price']}}</td>
-                                <td>{{$crypto['date']}}</td>
-                                <td><a href="{{route('chart_show',$crypto['nick_name'])}}">show</a></td>
-                            </tr>
-                        @endforeach
+                        {{--@foreach($cryptoes as $crypto)--}}
+                            {{--<tr>--}}
+                                {{--<th scope="row">{{$loop->iteration}}</th>--}}
+                                {{--<td>{{$crypto['name']}}</td>--}}
+                                {{--<td>{{$crypto['signal']}}</td>--}}
+                                {{--<td>{{$crypto['price']}}</td>--}}
+                                {{--<td>{{$crypto['date']}}</td>--}}
+                                {{--<td><a href="{{route('chart_show',$crypto['nick_name'])}}">show</a></td>--}}
+                            {{--</tr>--}}
+                        {{--@endforeach--}}
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Bitcoin</td>
+                            <td>yes</td>
+                            <td>85000</td>
+                            <td>2021/11/10</td>
+                            <td><a href="{{route('chart_show','BINANCE:BTCUSDT')}}">show</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Dodge</td>
+                            <td>no</td>
+                            <td>500</td>
+                            <td>2021/11/10</td>
+                            <td><a href="{{route('chart_show','BINANCE:DOGEUSDT')}}">show</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Solo</td>
+                            <td>no</td>
+                            <td>500</td>
+                            <td>2021/11/10</td>
+                            <td><a href="{{route('chart_show','BINANCE:SOLUSDT')}}">show</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Etheriom</td>
+                            <td>no</td>
+                            <td>100</td>
+                            <td>2021/11/10</td>
+                            <td><a href="{{route('chart_show','BINANCE:ETHUSDT')}}">show</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Shiba</td>
+                            <td>no</td>
+                            <td>150</td>
+                            <td>2021/11/10</td>
+                            <td><a href="{{route('chart_show','BINANCE:SHIBUSDT')}}">show</a></td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
