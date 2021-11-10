@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Share extends Model
 {
     use HasFactory;
+
 	protected $fillable=[
-		'name','signal','price','date'
+		'name','nick_name','signal','price','date'
 	];
+
 }

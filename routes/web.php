@@ -22,4 +22,8 @@ Route::get('/template', function () {
 Route::get('/forex',[MainController::class, 'showForex'])->name('forex_show');
 Route::get('/crypto',[MainController::class, 'showCrypto'])->name('crypto_show');
 Route::get('/charts/{nick_name}',[MainController::class, 'showChart'])->name('chart_show');
-
+Route::get('/upload',[MainController::class, 'showUpload'])->name('uplode_csv_view');
+Route::post('/upload',[MainController::class, 'saveUpload'])->name('uplode_csv_cont');
+Route::get('/phpinfo', function() {
+	phpinfo();
+});
